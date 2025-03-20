@@ -2,7 +2,6 @@
 const nextConfig = {
     images: {
       domains: [
-        "localhost" ,
         "powercem-backend-production.up.railway.app"
       ],
     },
