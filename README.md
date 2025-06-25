@@ -103,4 +103,4 @@ For major changes, please open an issue first to discuss what you would like to 
 
 ---
 
-**Made with ❤️ using Next.js & React**
+**Made with Abdallah wael❤️ using Next.js & React**
