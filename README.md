@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Powercem Frontend
 
-## Getting Started
+This is the official frontend for the Powercem project, built with [Next.js](https://nextjs.org/) and [React 19](https://react.dev/).  
+It provides a modern, responsive, and fast user experience for Powercem's products, projects, and admin dashboard.
 
-First, run the development server:
+---
 
+## 🚀 Getting Started
+
+### 1. **Clone the repository**
+```bash
+git clone https://github.com/your-username/powercem-frontend.git
+cd powercem-frontend
+```
+
+### 2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. **Configure environment variables**
+- Copy `.env.example` to `.env` and fill in your API URLs and any secrets:
+```bash
+cp .env.example .env
+```
+- Example:
+  ```
+  NEXT_PUBLIC_API_URL=http://localhost:5000
+  ```
+
+### 4. **Run the development server**
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+- Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🛠️ Project Structure
+
+```
+src/
+  app/
+    admin/           # Admin dashboard and management pages
+    compnant/        # Reusable UI components (Nav, Footer, Product, etc.)
+    context/         # React Context providers (Products, Projects, etc.)
+    pages/           # Main user-facing pages (Home, Products, Projects, About, Contact, etc.)
+  public/            # Static assets (images, icons, etc.)
+  styles/            # Global styles (Tailwind, custom CSS)
+.env                 # Environment variables
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Modern UI** with [Tailwind CSS](https://tailwindcss.com/)
+- **Dynamic routing** for products, projects, and admin
+- **Admin dashboard** for managing products, projects, clients, and more
+- **Context API** for global state management (products, projects, partners, etc.)
+- **Responsive** and mobile-friendly design
+- **Image optimization** with Next.js `<Image />`
+- **Loading spinners** and smooth transitions
+- **API integration** with backend (set via `NEXT_PUBLIC_API_URL`)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev` – Start development server
+- `npm run build` – Build for production
+- `npm run start` – Start production server
+- `npm run lint` – Lint code with ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📝 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Change API URL:**  
+  Edit `.env` and set `NEXT_PUBLIC_API_URL` to your backend API.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Add/Edit Products/Projects:**  
+  Use the admin dashboard (`/admin/product`, `/admin/project`) after logging in as admin.
+
+- **Styling:**  
+  Edit Tailwind config in `tailwind.config.mjs` or add custom CSS in `src/styles`.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!  
+For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📞 Contact
+
+For any questions or support, contact:  
+**Powercem Team**  
+[info@powercem.com](mailto:info@powercem.com)
+
+---
+
+**Made with ❤️ using Next.js & React**
